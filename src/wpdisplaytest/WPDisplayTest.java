@@ -91,10 +91,10 @@ public class WPDisplayTest extends Application {
         //if (rw.isError()){
         //    System.out.println(rw.get("error"));
         //}
-        //Scene scene = new Scene(root, 1024, 768);
-        Scene scene = new Scene(root);        
+        Scene scene = new Scene(root, 1024, 768);
+        //Scene scene = new Scene(root);        
         primaryStage.setScene(scene);
-        primaryStage.setFullScreen(true);
+        //primaryStage.setFullScreen(true);
         primaryStage.show();
 
     }
