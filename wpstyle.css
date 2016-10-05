@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016.09.28., 13:44:03
+    Author     : DAQ
+*/
+.root{
+    -fx-font-size: 16pt;
+    -fx-font-family: "Courier New";
+    -fx-base: rgb(40, 40, 40);
+    -fx-background: rgb(40, 40, 40);
+}
+
+.label{
+    -fx-text-fill: #ffff22;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,0,0.2) , 10,0.4,1,1);    
+    
+}
+
+.text  {
+    -fx-fill: #ffff22;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,0,0.2) , 10,0.4,1,1 );     
+    
+}
+
+#playerdisplay {
+  -fx-background-color: #606060;  
+  -fx-background-radius: 4; 
+    
+}
+
+.glowright {
+    -fx-effect: dropshadow( gaussian , rgba(0,255,0,0.6) , 10,0.4,3,-3 );    
+}
+
+.glowleft {
+    -fx-effect: dropshadow( gaussian , rgba(0,255,0,0.6) , 10,0.4,-3,-3 );    
+}
+
+.glowdown {
+    -fx-effect: dropshadow( gaussian , rgba(0,255,0,0.6) , 10,0.4,0,3 );    
+}
