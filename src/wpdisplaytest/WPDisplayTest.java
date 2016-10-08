@@ -52,7 +52,7 @@ public class WPDisplayTest extends Application {
         
 
         // Set root logger level to DEBUG and its only appender to A1.
-        String jsonstr = "{\"numlegs\":2,\"legduration\":3000,\"numovertimes\":0,\"overtimeduration\":20000}";
+        String jsonstr = "{\"numlegs\":2,\"legduration\":30000,\"numovertimes\":0,\"overtimeduration\":20000}";
 
         BasicConfigurator.configure();
         Postgres db = new Postgres();
