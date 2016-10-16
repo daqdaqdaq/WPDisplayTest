@@ -52,7 +52,7 @@ public class WPDisplayTest extends Application {
         
 
         // Set root logger level to DEBUG and its only appender to A1.
-        String jsonstr = "{\"numlegs\":2,\"legduration\":30000,\"numovertimes\":0,\"overtimeduration\":20000}";
+        //String jsonstr = "{\"numlegs\":2,\"legduration\":40000,\"numovertimes\":0,\"overtimeduration\":20000}";
 
         BasicConfigurator.configure();
         Postgres db = new Postgres();
@@ -83,7 +83,7 @@ public class WPDisplayTest extends Application {
         ScoreBoardScreen sbc = new ScoreBoardScreen(db);
         root.addScreen(sbc, "scoreboard");
         root.addScreen(new SplashScreen(db), "splash");
-        ServiceHandler.getInstance().setOrganizer(OrganizerBuilder.build(jsonstr, sbc));
+        //ServiceHandler.getInstance().setOrganizer(OrganizerBuilder.build(jsonstr, sbc));
         root.switchScreen("splash");
 
         ServiceHandler.getInstance().registerCleanup(primaryStage);
