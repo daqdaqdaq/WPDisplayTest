@@ -77,7 +77,8 @@ public class WPDisplayTest extends Application {
         } catch (SocketException ex) {
             Logger.getLogger(WPDisplayTest.class.getName()).log(Level.SEVERE, null, ex);
         }
-        ServiceHandler.getInstance().setHorn(new Horn(ServiceHandler.getInstance().getSenderthread()));
+        ServiceHandler.getInstance().setHorn(new Horn(ServiceHandler.getInstance().getSenderthread(),settings.getIntProperty("shorthorntime"),settings.getIntProperty("longhorntime")));
+        
 
         ControllerScreen root = new ControllerScreen(db, primaryStage);
         ScoreBoardScreen sbc = new ScoreBoardScreen(db);
